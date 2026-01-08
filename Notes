@@ -3,7 +3,17 @@
 Documentation of methods used to transform and clean bronze tables to move 
 to silver layer
 
+Quality checks
 
+It includes checks for
+Null or duplicate primary keys
+Unwanted spaces in string fields
+Data standardization
+Invalid date range and orders
+Data consistency between related fields
+
+Run checks after loading silver layer
+Investigate and resolve any discrepancies found during the checks
 
 --crm_cust_info table
 -- check for nulls or duplicates in primary key
