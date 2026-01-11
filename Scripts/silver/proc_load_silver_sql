@@ -183,7 +183,7 @@ cid,
 cntry
 )
 select
-replace (cid, '-', ' ') as cid,
+replace (cid, '-', '') as cid,
 case when upper(trim(cntry)) in ( 'USA', 'US', 'UNITED STATES') then 'United States'
 when upper(trim(cntry)) in ('DE', 'GERMANY') then 'Germany'
 when trim(cntry) = ' ' or cntry is null then 'N/A'
