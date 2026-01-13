@@ -11,7 +11,8 @@ gold.dim_customers
  
  Columns
  
-#Column Name      #Data type          #Description
+Column Name      |   Data type     |   Description                                                            |
+-----------------|-----------------|--------------------------------------------------------------------------|
 1. customer_key      INT              Surrogate key identifying each customer record in the dimmension table
 2. customer_id       INT              Unique numerical identifier assigned to each customer
 3. customer_number  nvarchar(50)      Alphanumeric identfier representing the customer
