@@ -1,0 +1,39 @@
+/*
+Create database and schema
+
+Script purpose
+  This script creates a new database called DWH_project after checking if it already exisits.  
+  If the database exists it is dropped and recreated.  Additionally the script creates three schemas
+  within the database: 'bronze', 'silver', and'gold'.
+
+WARNING:
+  Running this script will drop the entire database 'DWH_project' database if it exisits.  
+  All data in the database will be permanently deleted.  Proceed with caution.
+*/
+
+--Drop and recreate the DB
+IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DWH+project')
+  BEGIN
+    ALTER DATABASE 'DWH_project' SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE 'DWH_project':
+    END
+    GO
+
+Use master;
+GO
+
+--Create the DB
+Create database DWH_project;
+GO
+
+Use DWH_project;
+GO
+
+--Create the schema
+Create schema bronze;
+GO
+Create schema silver;
+GO
+Create schema gold;
+GO
+
