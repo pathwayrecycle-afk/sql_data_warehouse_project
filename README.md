@@ -1,29 +1,36 @@
 # sql_data_warehouse_project
 Building a data warehouse with SQL server including ETL processes, data modeling, and analytics
 
-Welcome to the **Data Warehouse and Analytics Project**
-This project demonstrates a comprehensive data warehouse and analytics solution, from building a data warehouse to actionable insights.  Designed
-as a portfolio project it highlights industry best practices in data engineering and analytics.
+## Project Overview
+This project demonstrates an end-to-end data warehouse and analytics solution designed to transform raw operational data into reliable, decision-ready insights. The work reflects real-world analytics practices, from data ingestion and quality enforcement to analytical modeling and business-focused reporting.
+
+The goal of this project is to create a trusted analytical foundation that enables stakeholders to confidently analyze customer behavior, product performance, and sales trends.
 
 ## Project requirements
 
-### Building the data warehouse (Data Engineering)
+### Data Engineering – Data Warehouse Development
 
-### Specifications
-  **Data Sources** Import data from two source systems (CRM & EROP) as csv files
-  **Data Quality** Cleanse and resolve data issues prior to analysis
-  **Integration** Combine both sources into a into a single user friendly data model designed for analytical queries
-  **Scope** Focus on the latest dataset only,historization of data is not required
-  **Documentation** Provide clear documentation on the data model to support both business stakeholders and analytics team
+### Scope & Requirements
 
-### BI Analytics (Data Analytics)
+  **Data Sources** CRM and ERP systems provided as CSV extracts
+  **Data Quality** Identification and resolution of duplicates, null values, invalid dates, and inconsistent business rules prior to analysis
+  **Integration** Consolidation of multiple operational sources into a single, user-friendly analytical data model
+  **Modeling Approach** Layered architecture (Bronze → Silver → Gold) optimized for analytical queries
+  **Scope Constraints** Focus on the most recent dataset; historization and SCD tracking intentionally excluded
+  **Documentation** Clear, structured documentation to support both business stakeholders and analytics teams
+This approach ensures data accuracy, consistency, and usability before any analytical queries are executed.
+  
+### Data Analytics – Business Insights
 #### Objective
-Develop SQL based analytics to deliver detailed insights into:
-  **Customer Behavior**
-  **Product Performance**
-  **Sales Trends**
+Develop SQL-based analytics that enable stakeholders to answer key business questions related to:
+  **Customer Behavior** Demographics, customer distribution, and relationship consistency across systems
+  **Product Performance** Product categories, pricing integrity, and lifecycle validity
+  **Sales Trends** Revenue accuracy, order timing, and sales consistency across orders and products
 
-These insights empower stakeholders with key business metrics, enabling strategic decision making.
+By enforcing data quality and modeling discipline upstream, the analytics layer delivers trustworthy metrics that support informed strategic decision-making.
+
+### Project Value
+This project emphasizes that high-quality analytics begin with high-quality data. By combining rigorous data validation with thoughtful modeling, the solution enables reliable reporting and reduces the risk of misleading insights caused by inconsistent or invalid source data.
 
 ## Licenses
 This project is licensed under the MIT license.  
