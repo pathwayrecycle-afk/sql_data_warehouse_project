@@ -34,8 +34,8 @@ from
 bronze.crm_cust_info
 where cst_id = 29466
 
---We want to use the last creation date as the valid record
---
+-- We want to use the last creation date as the valid record
+
 
 select
 *,
